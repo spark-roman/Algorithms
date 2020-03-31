@@ -47,7 +47,7 @@ namespace Algorithms.Sorts
             }
         }
 
-        private Array MergeSortInternal([NotNull]int[] array, int first, int last)
+        private int[] MergeSortInternal([NotNull]int[] array, int first, int last)
         {
             if (first < last)
             {
@@ -63,9 +63,7 @@ namespace Algorithms.Sorts
 
         public int[] Sort([NotNull]int[] array)
         {
-            MergeSortInternal(array, 0, array.Length - 1);
-
-            return array;
+            return MergeSortInternal(array, 0, array.Length - 1);
         }
     }
 }

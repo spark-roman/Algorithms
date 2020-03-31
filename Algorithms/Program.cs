@@ -27,6 +27,13 @@ namespace TestConsoleApp
             sortedList = heapSort.Sort(listToSort);
 
             Console.WriteLine(sortedList);
+
+            listToSort = new int[] { 5, 2, 4, 6, 1, 3, 9, 7, 8 };
+
+            var quickSort = new QuickSort();
+            sortedList = quickSort.Sort(listToSort);
+
+            Console.WriteLine(sortedList);
         }
     }
 }
