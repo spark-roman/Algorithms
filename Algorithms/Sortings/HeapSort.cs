@@ -5,14 +5,16 @@ namespace Algorithms.Sortings
 {
     public class HeapSort : ISortable
     {
-        public int[] Sort([NotNull] int[] array)
+        public int[] Sort([NotNull] int[] array, int first, int last)
         {
-            for (var i = array.Length / 2 - 1; i >= 0; i--)
+            var length = last - first + 1;
+
+            for (var i = length / 2 - 1; i >= 0; i--)
             {
-                Heapify(array, array.Length, i);
+                Heapify(array, length, i);
             }
 
-            for (var i = array.Length - 1; i >= 0; i--)
+            for (var i = length - 1; i >= 0; i--)
             {
                 RelatedActionsHelper.Swap(ref array[0], ref array[i]);
                 Heapify(array, i, 0);

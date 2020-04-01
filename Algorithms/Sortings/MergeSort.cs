@@ -46,23 +46,18 @@ namespace Algorithms.Sortings
             }
         }
 
-        private int[] MergeSortInternal([NotNull]int[] array, int first, int last)
+        public int[] Sort([NotNull]int[] array, int first, int last)
         {
             if (first < last)
             {
                 var middle = (first + last) / 2;
 
-                MergeSortInternal(array, first, middle);
-                MergeSortInternal(array, middle + 1, last);
+                Sort(array, first, middle);
+                Sort(array, middle + 1, last);
                 Merge(array, first, middle, last);
             }
 
             return array;
-        }
-
-        public int[] Sort([NotNull]int[] array)
-        {
-            return MergeSortInternal(array, 0, array.Length - 1);
         }
     }
 }

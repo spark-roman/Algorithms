@@ -33,21 +33,16 @@ namespace Algorithms.Sortings
             return left;
         }
 
-        private int[] QuickSortInternal(int[] array, int first, int last)
+        public int[] Sort([NotNull] int[] array, int first, int last)
         {
             if (first < last)
             {
                 var boundary = SortPartition(array, first, last);
-                QuickSortInternal(array, first, boundary);
-                QuickSortInternal(array, boundary + 1, last);
+                Sort(array, first, boundary);
+                Sort(array, boundary + 1, last);
             }
 
             return array;
-        }
-
-        public int[] Sort([NotNull] int[] array)
-        {
-            return QuickSortInternal(array, 0, array.Length - 1);
         }
     }
 }

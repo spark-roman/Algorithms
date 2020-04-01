@@ -10,28 +10,28 @@ namespace TestConsoleApp
             var listToSort = new int[] { 5, 2, 4, 6, 1, 3 };
             
             var insertSorting = new InsertionSort();
-            var sortedList = insertSorting.Sort(listToSort);
+            var sortedList = insertSorting.Sort(listToSort, 0, listToSort.Length - 1);
 
             Console.WriteLine(sortedList);
 
             listToSort = new int[] { 5, 2, 4, 6, 1, 3 };
 
             var mergeSort = new MergeSort();
-            sortedList = mergeSort.Sort(listToSort);
+            sortedList = mergeSort.Sort(listToSort, 0, listToSort.Length - 1);
 
             Console.WriteLine(sortedList);
 
             listToSort = new int[] { 5, 2, 4, 6, 1, 3 };
 
             var heapSort = new HeapSort();
-            sortedList = heapSort.Sort(listToSort);
+            sortedList = heapSort.Sort(listToSort, 0, listToSort.Length - 1);
 
             Console.WriteLine(sortedList);
 
             listToSort = new int[] { 5, 2, 4, 6, 1, 3, 9, 7, 8 };
 
             var quickSort = new QuickSort();
-            sortedList = quickSort.Sort(listToSort);
+            sortedList = quickSort.Sort(listToSort, 0, listToSort.Length - 1);
 
             Console.WriteLine(sortedList);
         }

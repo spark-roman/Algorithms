@@ -4,9 +4,11 @@ namespace Algorithms.Sortings
 {
     public class InsertionSort : ISortable
     {
-        public int[] Sort([NotNull]int[] array)
+        public int[] Sort([NotNull]int[] array, int first, int last)
         {
-            for (var j = 1; j < array.Length; j++)
+            var length = last - first + 1;
+
+            for (var j = first + 1; j < length; j++)
             {
                 var key = array[j];
                 var i = j - 1;
