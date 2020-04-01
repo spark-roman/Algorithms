@@ -1,18 +1,18 @@
 using System.Diagnostics.CodeAnalysis;
 using Algorithms.Utils;
 
-namespace Algorithms.Sorts
+namespace Algorithms.Sortings
 {
     public class HeapSort : ISortable
     {
         public int[] Sort([NotNull] int[] array)
         {
-            for (int i = array.Length / 2 - 1; i >= 0; i--)
+            for (var i = array.Length / 2 - 1; i >= 0; i--)
             {
                 Heapify(array, array.Length, i);
             }
 
-            for (int i = array.Length - 1; i >= 0; i--)
+            for (var i = array.Length - 1; i >= 0; i--)
             {
                 RelatedActionsHelper.Swap(ref array[0], ref array[i]);
                 Heapify(array, i, 0);

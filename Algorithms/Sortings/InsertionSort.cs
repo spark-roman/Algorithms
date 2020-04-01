@@ -1,6 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 
-namespace Algorithms.Sorts
+namespace Algorithms.Sortings
 {
     public class InsertionSort : ISortable
     {

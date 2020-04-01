@@ -1,5 +1,5 @@
 ﻿using System;
-using Algorithms.Sorts;
+using Algorithms.Sortings;
 
 namespace TestConsoleApp
 {

@@ -1,7 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using Algorithms.Utils;
 
-namespace Algorithms.Sorts
+namespace Algorithms.Sortings
 {
     public class QuickSort : ISortable
     {
@@ -9,8 +9,8 @@ namespace Algorithms.Sorts
         {
             var boundary = array[first];
 
-            int left = first;
-            int right = last;
+            var left = first;
+            var right = last;
 
             while (left < right)
             {

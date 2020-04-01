@@ -1,15 +1,14 @@
-using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Algorithms.Sorts
+namespace Algorithms.Sortings
 {
     public class MergeSort : ISortable
     {
         private void Merge([NotNull]int[] array, int first, int middle, int last)
         {
-            int left = first;
-            int right = middle + 1;
-            int sortedIndex = 0;
+            var left = first;
+            var right = middle + 1;
+            var sortedIndex = 0;
 
             var sorted = new int[last - first + 1];
 
