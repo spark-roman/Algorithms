@@ -1,10 +1,11 @@
 # Algorithms
 
-A set of the most important algorithms
+A set of the most important algorithms.
 
 ## Sorting
-Currently implemented sorting:
-- insertion sorting
-- merge sorting
-- heap sorting
-- quick soring
+Currently implemented sortings:
++ Comparison:
+    - insertion sorting
+    - merge sorting
+    - heap sorting
+    - quick soring
