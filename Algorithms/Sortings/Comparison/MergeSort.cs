@@ -2,7 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Algorithms.Sortings
 {
-    public class MergeSort : ISortable
+    public class MergeSort : ICompareSortable
     {
         private void Merge([NotNull]int[] array, int first, int middle, int last)
         {

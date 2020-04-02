@@ -9,3 +9,5 @@ Currently implemented sortings:
     - merge sorting
     - heap sorting
     - quick soring
++ Counting
+    - counting sorting
