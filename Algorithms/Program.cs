@@ -7,7 +7,7 @@ namespace TestConsoleApp
     {
         static void Main(string[] args)
         {
-            /*var listToSort = new int[] { 5, 2, 4, 6, 1, 3 };
+            var listToSort = new int[] { 5, 2, 4, 6, 1, 3 };
             
             var insertSorting = new InsertionSort();
             var sortedList = insertSorting.Sort(listToSort, 0, listToSort.Length - 1);
@@ -38,14 +38,14 @@ namespace TestConsoleApp
             listToSort = new int[] { 5, 2, 4, 6, 1, 3, 9, 7, 8 };
 
             var countingSort = new CountingSort();
-            sortedList = countingSort.Sort(listToSort, 0, listToSort.Length - 1, 9);
+            sortedList = countingSort.Sort(listToSort, 0, listToSort.Length - 1, maxValue: 9);
 
-            Console.WriteLine(sortedList);*/
+            Console.WriteLine(sortedList);
 
-            var listToSort = new int[] { 100, 97, 3, 28, 15, 17, 6, 127 };
+            listToSort = new int[] { 100, 97, 3, 28, 15, 17, 6, 127 };
 
             var radixSort = new RadixSort();
-            var sortedList = radixSort.Sort(listToSort, 0, listToSort.Length - 1, radix: 10);
+            sortedList = radixSort.Sort(listToSort, 0, listToSort.Length - 1, radix: 10);
 
             Console.WriteLine(sortedList);
         }
