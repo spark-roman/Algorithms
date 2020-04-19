@@ -8,16 +8,9 @@ namespace TestConsoleApp
         static void Main(string[] args)
         {
             var listToSort = new int[] { 5, 2, 4, 6, 1, 3 };
-            
-            var insertSorting = new InsertionSort();
-            var sortedList = insertSorting.Sort(listToSort, 0, listToSort.Length - 1);
-
-            Console.WriteLine(sortedList);
-
-            listToSort = new int[] { 5, 2, 4, 6, 1, 3 };
 
             var mergeSort = new MergeSort();
-            sortedList = mergeSort.Sort(listToSort, 0, listToSort.Length - 1);
+            var sortedList = mergeSort.Sort(listToSort, 0, listToSort.Length - 1);
 
             Console.WriteLine(sortedList);
 

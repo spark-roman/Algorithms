@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Algorithms.csproj", "{5AB96DC6-45C0-4244-B7D6-3F84692EB775}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoTests", "AlgoTests\AlgoTests.csproj", "{431A185D-324B-41F9-8AD8-ADFB5B06D3BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,17 @@ Global
 		{5AB96DC6-45C0-4244-B7D6-3F84692EB775}.Release|x64.Build.0 = Release|Any CPU
 		{5AB96DC6-45C0-4244-B7D6-3F84692EB775}.Release|x86.ActiveCfg = Release|Any CPU
 		{5AB96DC6-45C0-4244-B7D6-3F84692EB775}.Release|x86.Build.0 = Release|Any CPU
+		{431A185D-324B-41F9-8AD8-ADFB5B06D3BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{431A185D-324B-41F9-8AD8-ADFB5B06D3BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{431A185D-324B-41F9-8AD8-ADFB5B06D3BD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{431A185D-324B-41F9-8AD8-ADFB5B06D3BD}.Debug|x64.Build.0 = Debug|Any CPU
+		{431A185D-324B-41F9-8AD8-ADFB5B06D3BD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{431A185D-324B-41F9-8AD8-ADFB5B06D3BD}.Debug|x86.Build.0 = Debug|Any CPU
+		{431A185D-324B-41F9-8AD8-ADFB5B06D3BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{431A185D-324B-41F9-8AD8-ADFB5B06D3BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{431A185D-324B-41F9-8AD8-ADFB5B06D3BD}.Release|x64.ActiveCfg = Release|Any CPU
+		{431A185D-324B-41F9-8AD8-ADFB5B06D3BD}.Release|x64.Build.0 = Release|Any CPU
+		{431A185D-324B-41F9-8AD8-ADFB5B06D3BD}.Release|x86.ActiveCfg = Release|Any CPU
+		{431A185D-324B-41F9-8AD8-ADFB5B06D3BD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
