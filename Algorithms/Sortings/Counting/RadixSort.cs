@@ -1,5 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
-using Algorithms.Utils;
+using Algorithms.Statistics;
 
 namespace Algorithms.Sortings
 {
@@ -10,7 +10,7 @@ namespace Algorithms.Sortings
             var length = last - first + 1;
             var auxiliary = new int[radix, radix];
 
-            var maxValue = RelatedActionsHelper.Max(array);
+            var maxValue = Statistic.Max(array);
 
             for (var divider = 1; maxValue / divider > 0; divider *= 10)
             {

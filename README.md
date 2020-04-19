@@ -12,3 +12,6 @@ Currently implemented sortings:
 + Counting:
     - counting sorting
     - radix sorting
+## Statistic
++ array minimum value
++ array maximum value
