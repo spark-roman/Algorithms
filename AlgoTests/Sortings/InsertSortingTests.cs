@@ -1,29 +1,11 @@
 using Algorithms.Sortings;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AlgoTests
+namespace AlgoTests.Sortings
 {
     [TestClass]
-    public class SortingTests
+    public class InsertSortingTests : SertingTests
     {
-        private int[] _emptyArray = new int[0];
-        private int[] _oneElementArray = new int[1] { 131 };
-        private int[] _nullArray = null;
-        private int[] _toSortArray;
-        private int[] _referenceSortedArray = new int[] { 3, 6, 15, 17, 28, 97, 100, 127 };
-
-        [TestInitialize]
-        public void TestInitialize()
-        {
-            _toSortArray = new int[] { 100, 97, 3, 28, 15, 17, 6, 127 };
-        }
-
-        [TestCleanup]
-        public void TestCleanup()
-        {
-            
-        }
-
         [TestMethod]
         public void Sort_PassEmptyArray_ReturnEmptyArray()
         {

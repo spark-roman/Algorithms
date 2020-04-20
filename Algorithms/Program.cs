@@ -9,15 +9,8 @@ namespace TestConsoleApp
         {
             var listToSort = new int[] { 5, 2, 4, 6, 1, 3 };
 
-            var mergeSort = new MergeSort();
-            var sortedList = mergeSort.Sort(listToSort, 0, listToSort.Length - 1);
-
-            Console.WriteLine(sortedList);
-
-            listToSort = new int[] { 5, 2, 4, 6, 1, 3 };
-
             var heapSort = new HeapSort();
-            sortedList = heapSort.Sort(listToSort, 0, listToSort.Length - 1);
+            var sortedList = heapSort.Sort(listToSort, 0, listToSort.Length - 1);
 
             Console.WriteLine(sortedList);
 
