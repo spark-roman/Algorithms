@@ -7,24 +7,10 @@ namespace TestConsoleApp
     {
         static void Main(string[] args)
         {
-            var listToSort = new int[] { 5, 2, 4, 6, 1, 3 };
-
-            var heapSort = new HeapSorting();
-            var sortedList = heapSort.Sort(listToSort, 0, listToSort.Length - 1);
-
-            Console.WriteLine(sortedList);
-
-            listToSort = new int[] { 5, 2, 4, 6, 1, 3, 9, 7, 8 };
-
-            var quickSort = new QuickSorting();
-            sortedList = quickSort.Sort(listToSort, 0, listToSort.Length - 1);
-
-            Console.WriteLine(sortedList);
-
-            listToSort = new int[] { 5, 2, 4, 6, 1, 3, 9, 7, 8 };
+            var listToSort = new int[] { 5, 2, 4, 6, 1, 3, 9, 7, 8 };
 
             var countingSort = new CountingSorting();
-            sortedList = countingSort.Sort(listToSort, 0, listToSort.Length - 1, maxValue: 9);
+            var sortedList = countingSort.Sort(listToSort, 0, listToSort.Length - 1, maxValue: 9);
 
             Console.WriteLine(sortedList);
 
