@@ -8,6 +8,12 @@ namespace Algorithms.Sortings
         public int[] Sort([NotNull] int[] array, int first, int last, int radix)
         {
             var length = last - first + 1;
+
+            if (length == 0)
+            {
+                return array;
+            }
+
             var auxiliary = new int[radix, radix];
 
             var maxValue = Statistic.Max(array);
