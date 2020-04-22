@@ -2,7 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Algorithms.Sortings
 {
-    public class CountingSort : ICountingSortable
+    public class CountingSorting : ICountingSortable
     {
         public int[] Sort([NotNull] int[] array, int first, int last, int maxValue)
         {

@@ -3,7 +3,7 @@ using Algorithms.Statistics;
 
 namespace Algorithms.Sortings
 {
-    public class RadixSort : ICountingSortable
+    public class RadixSorting : ICountingSortable
     {
         public int[] Sort([NotNull] int[] array, int first, int last, int radix)
         {

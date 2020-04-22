@@ -2,7 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Algorithms.Sortings
 {
-    public class InsertionSort : ICompareSortable
+    public class InsertionSorting : ICompareSortable
     {
         public int[] Sort([NotNull]int[] array, int first, int last)
         {

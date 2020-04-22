@@ -3,7 +3,7 @@ using Algorithms.Utils;
 
 namespace Algorithms.Sortings
 {
-    public class BubbleSort : ICompareSortable
+    public class BubbleSorting : ICompareSortable
     {
         public int[] Sort([NotNull]int[] array, int first, int last)
         {

@@ -10,7 +10,7 @@ namespace AlgoTests.Sortings
         [TestMethod]
         public void Sort_PassEmptyArray_ReturnEmptyArray()
         {
-            var bubbleSorting = new BubbleSort();
+            var bubbleSorting = new BubbleSorting();
             var sortedArray = bubbleSorting.Sort(_emptyArray, 0, _emptyArray.Length - 1);
 
             CollectionAssert.AreEqual(sortedArray, _emptyArray);
@@ -19,7 +19,7 @@ namespace AlgoTests.Sortings
         [TestMethod]
         public void Sort_PassOneElementArray_ReturnOneElementArray()
         {
-            var bubbleSorting = new BubbleSort();
+            var bubbleSorting = new BubbleSorting();
             var sortedArray = bubbleSorting.Sort(_oneElementArray, 0, _oneElementArray.Length - 1);
 
             CollectionAssert.AreEqual(sortedArray, _oneElementArray);
@@ -28,7 +28,7 @@ namespace AlgoTests.Sortings
         [TestMethod]
         public void Sort_PassValidArray_ReturnSortedArray()
         {
-            var bubbleSorting = new BubbleSort();
+            var bubbleSorting = new BubbleSorting();
             var sortedArray = bubbleSorting.Sort(_toSortArray, 0, _toSortArray.Length - 1);
 
             CollectionAssert.AreEqual(sortedArray, _referenceSortedArray);

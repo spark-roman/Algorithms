@@ -3,7 +3,7 @@ using Algorithms.Utils;
 
 namespace Algorithms.Sortings
 {
-    public class HeapSort : ICompareSortable
+    public class HeapSorting : ICompareSortable
     {
         public int[] Sort([NotNull] int[] array, int first, int last)
         {

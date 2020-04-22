@@ -3,7 +3,7 @@ using Algorithms.Utils;
 
 namespace Algorithms.Sortings
 {
-    public class QuickSort : ICompareSortable
+    public class QuickSorting : ICompareSortable
     {
         private int SortPartition(int[] array, int first, int last)
         {
