@@ -5,6 +5,7 @@ A set of the most important algorithms.
 ## Sorting
 Currently implemented sortings:
 + Comparison:
+    - bubble sorting
     - insertion sorting
     - merge sorting
     - heap sorting
