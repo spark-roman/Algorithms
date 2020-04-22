@@ -10,7 +10,7 @@ namespace AlgoTests.Sortings
         public void Sort_PassEmptyArray_ReturnEmptyArray()
         {
             var countingSorting = new CountingSorting();
-            var sortedArray = countingSorting.Sort(_emptyArray, 0, _emptyArray.Length - 1, maxValue: 9);
+            var sortedArray = countingSorting.Sort(_emptyArray, 0, _emptyArray.Length - 1, maxValue: 127);
 
             CollectionAssert.AreEqual(sortedArray, _emptyArray);
         }
@@ -19,7 +19,7 @@ namespace AlgoTests.Sortings
         public void Sort_PassOneElementArray_ReturnOneElementArray()
         {
             var countingSorting = new CountingSorting();
-            var sortedArray = countingSorting.Sort(_oneElementArray, 0, _oneElementArray.Length - 1, maxValue: 9);
+            var sortedArray = countingSorting.Sort(_oneElementArray, 0, _oneElementArray.Length - 1, maxValue: 131);
 
             CollectionAssert.AreEqual(sortedArray, _oneElementArray);
         }
@@ -28,7 +28,7 @@ namespace AlgoTests.Sortings
         public void Sort_PassValidArray_ReturnSortedArray()
         {
             var countingSorting = new CountingSorting();
-            var sortedArray = countingSorting.Sort(_toSortArray, 0, _toSortArray.Length - 1, maxValue: 9);
+            var sortedArray = countingSorting.Sort(_toSortArray, 0, _toSortArray.Length - 1, maxValue: 127);
 
             CollectionAssert.AreEqual(sortedArray, _referenceSortedArray);
         }

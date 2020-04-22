@@ -20,12 +20,12 @@ namespace Algorithms.Sortings
                 frequencies[array[i] - 1] += 1;
             }
 
-            for (var i = 1; i < length; i++)
+            for (var i = 1; i < maxValue; i++)
             {
                 frequencies[i] += frequencies[i - 1];
             }
 
-            var sortedArray = new int[maxValue];
+            var sortedArray = new int[length];
             
             for (var i = length - 1; i >= 0; i--)
             {
