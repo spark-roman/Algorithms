@@ -2,7 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AlgoTests.Sortings
 {
-    public abstract class SertingTests
+    public abstract class SortingTests
     {
         protected int[] _emptyArray = new int[0];
         protected int[] _oneElementArray = new int[1] { 131 };

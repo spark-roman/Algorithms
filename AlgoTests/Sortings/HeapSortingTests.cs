@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace AlgoTests.Sortings
 {
     [TestClass]
-    public class HeapSortingTests : SertingTests
+    public class HeapSortingTests : SortingTests
     {
         [TestMethod]
         public void Sort_PassEmptyArray_ReturnEmptyArray()

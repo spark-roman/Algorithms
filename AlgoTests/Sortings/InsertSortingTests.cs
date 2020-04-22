@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace AlgoTests.Sortings
 {
     [TestClass]
-    public class InsertSortingTests : SertingTests
+    public class InsertSortingTests : SortingTests
     {
         [TestMethod]
         public void Sort_PassEmptyArray_ReturnEmptyArray()
