@@ -2,7 +2,7 @@ using System;
 
 namespace Algorithms.Structures
 {
-    public class Stack<T> : IStack<T>
+    public class Stack<T>
     {
         private T[] _stackArray;
 
@@ -20,7 +20,7 @@ namespace Algorithms.Structures
         }
 
 
-        public int Size => throw new NotImplementedException();
+        public int Size => _size;
 
         public void Clear()
         {

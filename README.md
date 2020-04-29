@@ -16,3 +16,7 @@ Currently implemented sortings:
 ## Statistic
 + array minimum value
 + array maximum value
+## Structures
+Currently implemented structures:
++ Stack
++ Queue
