@@ -18,7 +18,7 @@ namespace AlgoTests.Structures
         }
 
         [TestMethod]
-        public void Clear_AddThreeElements_Clear_IsEmptyTrue()
+        public void Clear_AddThreeElements_IsEmptyTrue()
         {
             var queue = new Queue<int>();
             queue.Enqueue(1);
