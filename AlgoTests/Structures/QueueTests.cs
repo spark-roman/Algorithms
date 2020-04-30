@@ -73,7 +73,7 @@ namespace AlgoTests.Structures
         }
 
         [TestMethod]
-        public void Dequeue_AddFiveElementsGetOne_CheckEqualFive()
+        public void Dequeue_AddFiveElementsGetOne_CheckEqualOne()
         {
             var queue = new Queue<int>();
             queue.Enqueue(1);

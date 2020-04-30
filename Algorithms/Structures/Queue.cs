@@ -66,7 +66,7 @@ namespace Algorithms.Structures
 
                 if (_head == 0)
                 {
-                    capacity = _queueArray.Length == 0 ? 2 : _queueArray.Length * 2;
+                    capacity = _queueArray.Length == 0 ? 16 : _queueArray.Length * 2;
                 }
                 else if (_head > 0)
                 {

@@ -21,6 +21,7 @@ namespace Algorithms.Structures
 
 
         public int Size => _size;
+        public int Capacity => _stackArray.Length;
 
         public void Clear()
         {
